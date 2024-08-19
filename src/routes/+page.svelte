@@ -43,9 +43,9 @@
 			</p>
 		</div>
 		<div class="flex justify-center space-x-4">
-			<a href="#join" class="linkButtonPrimary">Rejoignez {agencyName}</a>
+			<a href="#hero" class="linkButtonPrimary">Rejoignez {agencyName}</a>
 			<a
-				href="#learn-more"
+				href="#hero"
 				class="bg-gray-800 flex justify-center items-center text-white py-2 px-6 rounded-lg font-semibold transition-colors duration-200 hover:bg-gray-700"
 			>
 				En savoir plus
@@ -333,7 +333,7 @@
 					Voici les résultats et revenus qu'il est possible d'atteindre en rejoignant {agencyName}
 					Agency.
 				</p>
-				<a href="#solp" class="text-primary font-semibold mt-2 inline-block"
+				<a href="#hero" class="text-primary font-semibold mt-2 inline-block"
 					>Découvrez comment obtenir ces résultats →</a
 				>
 			</div>
@@ -574,7 +574,7 @@
 
 	<!-- Call to Action -->
 	<div class="mt-12 text-center flex justify-center">
-		<a href="#join" class="linkButtonPrimary"> Rejoignez {agencyName} </a>
+		<a href="#hero" class="linkButtonPrimary"> Rejoignez {agencyName} </a>
 	</div>
 </section>
 
@@ -643,7 +643,7 @@
 			</div>
 			<div class="lg:w-1/3 mt-4 lg:mt-0 lg:pl-8 text-center lg:text-left">
 				<a
-					href="#join"
+					href="#hero"
 					class="bg-primary text-black py-3 px-8 rounded-lg font-semibold hover:bg-yellow-700 inline-block mt-4 lg:mt-0"
 				>
 					Rejoignez {agencyName} →
@@ -740,18 +740,18 @@
 
 		<!-- Legal Links -->
 		<div class="flex justify-center space-x-4 text-sm">
-			<a href="#" class="hover:underline">Mentions légales</a>
+			<a href="#hero" class="hover:underline">Mentions légales</a>
 			<span class="text-gray-400">|</span>
-			<a href="#" class="hover:underline">Politique de confidentialité</a>
+			<a href="#hero" class="hover:underline">Politique de confidentialité</a>
 			<span class="text-gray-400">|</span>
-			<a href="#" class="hover:underline">Politique de cookies</a>
+			<a href="#hero" class="hover:underline">Politique de cookies</a>
 		</div>
 	</div>
 
 	<!-- Bottom Bar -->
 	<div class="bg-primary-dark py-2 mt-8 text-center text-sm">
 		<p class="text-gray-800">
-			Design, textes et dev par <a href="#pb" class="text-white hover:underline">PB</a>
+			Design, textes et dev par <a href="#hero" class="text-white hover:underline">PB</a>
 		</p>
 	</div>
 </footer>
