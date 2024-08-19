@@ -540,7 +540,10 @@
 			</div>
 
 			<!-- Card 6 -->
-			<div class="bg-secondary text-white p-6 rounded-lg shadow-lg border-t-2 border-primary">
+			<div
+				id="Contact"
+				class="bg-secondary text-white p-6 rounded-lg shadow-lg border-t-2 border-primary"
+			>
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
@@ -579,7 +582,7 @@
 </section>
 
 <section id="A propos" class="bg-white py-28 px-6 lg:px-20">
-	<div class="max-w-7xl mx-auto">
+	<div id="FAQ" class="max-w-7xl mx-auto">
 		<!-- Top Section: Image and Description -->
 		<div class="lg:flex lg:items-center lg:space-x-12">
 			<!-- Image -->
