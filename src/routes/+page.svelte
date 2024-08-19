@@ -5,7 +5,7 @@
 	import girl1 from '$lib/images/girl1.png';
 	import buis from '$lib/images/buis.png';
 	import Navbar from '../components/Navbar.svelte';
-	import video from '$lib/images/vidéos/Video 3.mp4';
+	import video from '$lib/images/vidéos/Video3.mp4';
 	const agencyName = 'Mia Prestige';
 
 	// let videoUrl =
