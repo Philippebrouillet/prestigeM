@@ -5,10 +5,11 @@
 	import girl1 from '$lib/images/girl1.png';
 	import buis from '$lib/images/buis.png';
 	import Navbar from '../components/Navbar.svelte';
+	import video from '$lib/images/vidéos/Video 3.mp4';
 	const agencyName = 'Mia Prestige';
 
-	let videoUrl =
-		'https://honeyfans-agency.com/wp-content/uploads/2023/07/video-header-HoneyFans-Agency-v3-720p.mp4';
+	// let videoUrl =
+	// 	'https://honeyfans-agency.com/wp-content/uploads/2023/07/video-header-HoneyFans-Agency-v3-720p.mp4';
 </script>
 
 <svelte:head>
@@ -22,7 +23,7 @@
 <main id="hero" class="relative h-screen flex justify-center items-center overflow-hidden">
 	<!-- Background Video -->
 	<video
-		src={videoUrl}
+		src={video}
 		autoplay
 		muted
 		loop
@@ -196,7 +197,7 @@
 
 <!-- SECTION SOLUTION  -->
 
-<section id="Solution" class="bg-white py-28 px-6 lg:px-20 border-y border-primary bg-secondary/20">
+<section id="Solution" class="py-28 px-6 lg:px-20 border-y border-primary bg-secondary/20">
 	<div class="max-w-7xl mx-auto text-center mb-12">
 		<!-- Heading -->
 		<h2 class="text-3xl lg:text-4xl font-semibold mb-10 playfair">
