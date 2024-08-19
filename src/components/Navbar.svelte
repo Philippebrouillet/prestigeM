@@ -25,7 +25,7 @@
 			? ' bg-gradient-to-t from-primary/70 via-secondary/90 to-tertiary/95 text-white'
 			: 'bg-transparent text-white'} z-50 fixed top-0 w-full flex justify-center items-center"
 	>
-		<nav class="transition-all duration-300 {scrollY > scrollLimit ? 'py-3' : 'py-5'}">
+		<nav class="transition-all duration-300 {scrollY > scrollLimit ? 'py-4' : 'py-5'}">
 			<ul class:text-lg={scrollY < scrollLimit} class="flex justify-center items-center gap-5">
 				{#each links as link, i}
 					{#if i === 3}
@@ -35,7 +35,7 @@
 									src={link}
 									alt="logo"
 									class="transition-all duration-200 {scrollY > scrollLimit
-										? ' h-12 border border-white'
+										? ' h-12 border-2 border-white'
 										: ' h-16 '}    cursor-pointer rounded-full"
 								/>
 							</a>
@@ -66,7 +66,7 @@
 					src={logo}
 					alt="logo"
 					class="transition-all duration-200 {scrollY > scrollLimit
-						? ' h-12 border border-white'
+						? ' h-12 border-2 border-white'
 						: ' h-16'}    cursor-pointer rounded-full"
 				/>
 			</a>
@@ -109,7 +109,7 @@
 					<img
 						src={logo}
 						alt="logo"
-						class="transition-all text-left border border-white duration-200 h-28 cursor-pointer rounded-full mb-10"
+						class="transition-all text-left border-2 border-white duration-200 h-28 cursor-pointer rounded-full mb-10"
 					/>
 				</a>
 				{#each links as link, i}
