@@ -667,7 +667,7 @@
 		<nav class="mb-6">
 			<ul class="flex justify-center space-x-6">
 				<li><a href="#Solution" class="hover:underline">Solution</a></li>
-				<li><a href="#Resultas" class="hover:underline">Résultats</a></li>
+				<li><a href="#Résultas" class="hover:underline">Résultats</a></li>
 				<li><a href="#Services" class="hover:underline">Services</a></li>
 				<li><a href="#A propos" class="hover:underline">À propos</a></li>
 				<li><a href="#FAQ" class="hover:underline">FAQ</a></li>
