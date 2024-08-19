@@ -56,7 +56,7 @@
 			: 'bg-transparent text-white'} z-50 fixed top-0 w-full flex justify-center items-center"
 	>
 		<nav
-			class="transition-all duration-300 w-full max-w-2xl mx-10 flex justify-between {scrollY >
+			class="transition-all duration-300 w-full max-w-2xl mx-6 flex justify-between {scrollY >
 			scrollLimit
 				? 'py-3'
 				: 'py-5'}"

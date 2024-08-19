@@ -23,6 +23,9 @@
 	.playfair {
 		font-family: 'Playfair Display', serif !important;
 	}
+	.whiteImg {
+		filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg);
+	}
 
 	.navlink {
 		@apply hover:text-primary transition-colors duration-150 font-semibold;

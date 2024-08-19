@@ -4,8 +4,20 @@
 
 	import girl1 from '$lib/images/girl1.png';
 	import buis from '$lib/images/buis.png';
+	import concu from '$lib/images/concu.png';
+	import marketing from '$lib/images/marketing.png';
+	import motivation from '$lib/images/motivation.png';
+	import argent from '$lib/images/argent2.png';
+	import timeplus from '$lib/images/timeplus.png';
+	import perso from '$lib/images/perso.png';
+	import unique from '$lib/images/unique.png';
+	import gestion from '$lib/images/gestion.png';
+	import vente from '$lib/images/vente.png';
+	import formation from '$lib/images/formation.png';
+	import planification from '$lib/images/planification.png';
+	import assistance from '$lib/images/assistance.png';
 	import Navbar from '../components/Navbar.svelte';
-	import video from '$lib/images/vidéos/Video3.mp4';
+	import video from '$lib/vidéos/Video3.mp4';
 	const agencyName = 'Mia Prestige';
 
 	// let videoUrl =
@@ -33,21 +45,21 @@
 	</video>
 
 	<!-- Content on top of the video -->
-	<div class="relative text-center py-20 px-4 text-white max-w-2xl lg:max-w-4xl z-10">
-		<h1 class="text-3xl lg:text-4xl font-semibold mb-10 playfair leading-10">
+	<div class="relative text-center py-20 px-4 text-white max-w-2xl lg:max-w-4xl z-10 mt-10">
+		<h1 class="text-3xl lg:text-4xl font-semibold mb-10 playfair leading-10 tracking-wide">
 			Boostez vos revenus OnlyFans et MYM grâce à l’agence de management {agencyName}
 		</h1>
 		<div class="flex justify-center mb-10">
-			<p class="lg:text-lg w-full max-w-xl font-semibold">
+			<p class="lg:text-lg w-full max-w-xl font-medium">
 				{agencyName} aide les créatrices de contenu à rentrer dans le Top 1% sur OnlyFans et MYM pour
 				maximiser leurs revenus
 			</p>
 		</div>
-		<div class="flex justify-center space-x-4">
+		<div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
 			<a href="#hero" class="linkButtonPrimary">Rejoignez {agencyName}</a>
 			<a
 				href="#hero"
-				class="bg-gray-800 flex justify-center items-center text-white py-2 px-6 rounded-lg font-semibold transition-colors duration-200 hover:bg-gray-700"
+				class="linkButtonPrimary bg-transparent border-2 border-gray-300 text-gray-300 hover:bg-transparent hover hover:text-tertiary"
 			>
 				En savoir plus
 			</a>
@@ -81,30 +93,24 @@
 		<div class="flex flex-col lg:flex-row items-start gap-8">
 			<!-- Left Column with Image -->
 			<div class="w-full lg:w-1/3">
-				<img src={girl1} alt="Illustration" class="rounded-lg shadow-lg" />
+				<img
+					src={girl1}
+					alt="Illustration"
+					class="rounded-lg shadow-lg max-h-[500px] lg:min-h-[500px] lg:max-h-[2000px] object-cover"
+				/>
 			</div>
 
 			<!-- Right Column with Text Content -->
-			<div class="w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<div class="w-full lg:w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
 				<!-- Card 1 -->
-				<div class="flex flex-col gap-2">
+				<div class="flex flex-col gap-3">
 					<div class="bg-primary w-[57px] text-white p-3 rounded-full">
-						<!-- Replace with an appropriate icon -->
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-8 w-8"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-							stroke-width="2"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={concu} alt="concurrence" />
 					</div>
 
 					<div>
 						<h3 class="text-xl font-semibold text-gray-700 playfair">Beaucoup de concurrence</h3>
-						<p class="mt-2 text-gray-400 text-sm">
+						<p class="mt-4 text-gray-400 text-sm">
 							En 2023, MYM compte 150 000 créatrices et créateurs, OnlyFans 2,1 millions. La moyenne
 							des gains sur OnlyFans est de $150/mois, alors que le Top 1% capte à lui seul 73% des
 							revenus! Se démarquer ne s'improvise pas !
@@ -113,24 +119,14 @@
 				</div>
 
 				<!-- Card 2 -->
-				<div class="flex flex-col gap-2">
+				<div class="flex flex-col gap-3">
 					<div class="bg-primary text-white w-[57px] p-3 rounded-full">
-						<!-- Replace with an appropriate icon -->
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-8 w-8"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-							stroke-width="2"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18v18H3V3z" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={marketing} alt="marketing" />
 					</div>
 
 					<div>
 						<h3 class="text-xl font-semibold text-gray-700 playfair">Pas de stratégie marketing</h3>
-						<p class="mt-2 text-gray-400 text-sm">
+						<p class="mt-4 text-gray-400 text-sm">
 							Poster du contenu sans ligne directrice, stratégie différenciatrice ou optimisation
 							marketing conduit presque toujours à des résultats décevants. C'est malheureusement le
 							cas d'une majorité de créateurs sur OnlyFans et MYM.
@@ -139,25 +135,15 @@
 				</div>
 
 				<!-- Card 3 -->
-				<div class="flex flex-col gap-2">
+				<div class="flex flex-col gap-3">
 					<div class="bg-primary w-[57px] text-white p-3 rounded-full">
-						<!-- Replace with an appropriate icon -->
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-8 w-8"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-							stroke-width="2"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8m4-4H8" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={motivation} alt="motivation" />
 					</div>
 					<div>
 						<h3 class="text-xl font-semibold text-gray-700 playfair">
 							Manque de rigueur et motivation
 						</h3>
-						<p class="mt-2 text-gray-400 text-sm">
+						<p class="mt-4 text-gray-400 text-sm">
 							Le succès sur OnlyFans et MYM requiert assiduité et motivation sur le long terme.
 							S'accrocher et tenir le rythme seul.e dans la durée est un défi. Nombreux sont les
 							créateurs qui finissent par abandonner !
@@ -166,9 +152,8 @@
 				</div>
 
 				<!-- Card 4 -->
-				<div class="flex flex-col gap-2">
+				<div class="flex flex-col gap-3">
 					<div class="bg-primary w-[57px] text-white p-3 rounded-full">
-						<!-- Replace with an appropriate icon -->
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-8 w-8"
@@ -177,13 +162,17 @@
 							stroke="currentColor"
 							stroke-width="2"
 						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01" />
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 6v6l4 2M12 2a10 10 0 0110 10 10 10 0 01-10 10 10 10 0 01-10-10A10 10 0 0112 2z"
+							/>
 						</svg>
 					</div>
 
 					<div>
 						<h3 class="text-xl font-semibold text-gray-700 playfair">Manque de temps</h3>
-						<p class="mt-2 text-gray-400 text-sm">
+						<p class="mt-4 text-gray-400 text-sm">
 							Créer des comptes OnlyFans et MYM demande une attention constante. Créer du contenu,
 							rédiger les légendes, répondre aux messages, promouvoir sur les réseaux sociaux...
 							réussir dans ce domaine est terriblement chronophage !
@@ -224,20 +213,7 @@
 			<div class="mb-4">
 				<!-- Icon (You can replace with appropriate SVG) -->
 				<div class="bg-tertiary text-white p-3 rounded-full">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						class="h-8 w-8"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M12 8v4m0 4h.01M12 8v4m0 4h.01M12 8v4m0 4h.01"
-						/>
-					</svg>
+					<img class="h-8 w-8" src={argent} alt="argent" />
 				</div>
 			</div>
 			<h3 class="text-xl font-semibold mb-2 text-gray-800 playfair h-[70px]">
@@ -257,20 +233,7 @@
 			<div class="mb-4">
 				<!-- Icon (You can replace with appropriate SVG) -->
 				<div class="bg-tertiary text-white p-3 rounded-full">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						class="h-8 w-8"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M12 8v4m0 4h.01M12 8v4m0 4h.01M12 8v4m0 4h.01"
-						/>
-					</svg>
+					<img class="h-8 w-8" src={timeplus} alt="timeplus" />
 				</div>
 			</div>
 			<h3 class="text-xl font-semibold mb-2 text-gray-800 playfair h-[70px]">Gagnez du temps</h3>
@@ -289,20 +252,7 @@
 			<div class="mb-4">
 				<!-- Icon (You can replace with appropriate SVG) -->
 				<div class="bg-tertiary text-white p-3 rounded-full">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						class="h-8 w-8"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M12 8v4m0 4h.01M12 8v4m0 4h.01M12 8v4m0 4h.01"
-						/>
-					</svg>
+					<img class="h-8 w-8" src={perso} alt="perso" />
 				</div>
 			</div>
 			<h3 class="text-xl font-semibold mb-2 text-gray-800 playfair h-[70px]">
@@ -380,7 +330,7 @@
 	</div>
 </section>
 
-<section id="Services" class="bg-white py-28 px-6 lg:px-20">
+<section id="Services" class=" py-28 px-6 lg:px-20 border-y border-primary bg-secondary/20">
 	<div class="max-w-7xl mx-auto text-center mb-12">
 		<!-- Section Title -->
 		<h2 class="text-3xl lg:text-4xl font-semibold mb-4 playfair">
@@ -404,20 +354,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M12 2l9.53 6.69c.87.61.87 1.91 0 2.52L12 18.8 2.47 11.21a1.5 1.5 0 010-2.52L12 2z"
-							/>
-						</svg>
+						<img class="h-8 w-8" src={unique} alt="unique" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Définition de votre image unique</h3>
@@ -435,16 +372,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18v18H3V3z" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={gestion} alt="gestion" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Gestion de comptes MYM et OnlyFans</h3>
@@ -462,16 +390,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={vente} alt="vente" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Marketing et promotion</h3>
@@ -489,16 +408,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={formation} alt="formation" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Conseil, accompagnement, formation</h3>
@@ -515,20 +425,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M12 8v4m0 4h.01M12 8v4m0 4h.01M12 8v4m0 4h.01"
-							/>
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={planification} alt="planification" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Planification et inspiration</h3>
@@ -548,20 +445,7 @@
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							class="h-8 w-8"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M12 8v4m0 4h.01M12 8v4m0 4h.01M12 8v4m0 4h.01"
-							/>
-						</svg>
+						<img class="h-8 w-8 whiteImg" src={assistance} alt="assistance" />
 					</div>
 				</div>
 				<h3 class="text-xl font-semibold mb-4 playfair">Assistance et support</h3>
@@ -617,15 +501,17 @@
 		</div>
 
 		<!-- Values Section -->
-		<div class="flex justify-center items-center space-x-4 text-center my-20 playfair">
+		<div
+			class="flex flex-col sm:flex-row justify-center items-center space-x-4 text-center my-10 sm:my-20 mx-2 playfair"
+		>
 			<div class="border-b-2 border-gray-300 flex-grow"></div>
-			<span class="text-xl font-semibold">Humanité</span>
-			<div class="border-b-2 border-gray-300 flex-grow"></div>
-			<span class="text-xl font-semibold">Confiance</span>
-			<div class="border-b-2 border-gray-300 flex-grow"></div>
-			<span class="text-xl font-semibold">Bienveillance</span>
-			<div class="border-b-2 border-gray-300 flex-grow"></div>
-			<span class="text-xl font-semibold">Respect</span>
+			<span class="text-4xl sm:text-xl font-semibold">Humanité</span>
+			<div class="border-b-2 border-gray-300 w-full my-3 sm:my-0 sm:w-auto flex-grow"></div>
+			<span class="text-4xl sm:text-xl font-semibold">Confiance</span>
+			<div class="border-b-2 border-gray-300 w-full my-3 sm:my-0 sm:w-auto flex-grow"></div>
+			<span class="text-4xl sm:text-xl font-semibold">Bienveillance</span>
+			<div class="border-b-2 border-gray-300 w-full my-3 sm:my-0 sm:w-auto flex-grow"></div>
+			<span class="text-4xl sm:text-xl font-semibold">Respect</span>
 			<div class="border-b-2 border-gray-300 flex-grow"></div>
 		</div>
 
@@ -646,10 +532,7 @@
 				</p>
 			</div>
 			<div class="lg:w-1/3 mt-4 lg:mt-0 lg:pl-8 text-center lg:text-left">
-				<a
-					href="#hero"
-					class="bg-primary text-black py-3 px-8 rounded-lg font-semibold hover:bg-yellow-700 inline-block mt-4 lg:mt-0"
-				>
+				<a href="#hero" class="linkButtonPrimary hover:bg-tertiary hover:text-primary">
 					Rejoignez {agencyName} →
 				</a>
 			</div>
@@ -665,17 +548,17 @@
 		</div>
 
 		<!-- Agency Name -->
-		<h2 class="text-2xl font-semibold mb-6">{agencyName}</h2>
+		<h2 class="text-2xl font-semibold mb-6 playfair">{agencyName}</h2>
 
 		<!-- Navigation Links -->
 		<nav class="mb-6">
-			<ul class="flex justify-center space-x-6">
-				<li><a href="#Solution" class="hover:underline">Solution</a></li>
-				<li><a href="#Résultats" class="hover:underline">Résultats</a></li>
-				<li><a href="#Services" class="hover:underline">Services</a></li>
-				<li><a href="#A propos" class="hover:underline">À propos</a></li>
-				<li><a href="#FAQ" class="hover:underline">FAQ</a></li>
-				<li><a href="#Contact" class="hover:underline">Contact</a></li>
+			<ul class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6">
+				<li><a href="#Solution" class="navlink hover:text-tertiary">Solution</a></li>
+				<li><a href="#Résultats" class="navlink hover:text-tertiary">Résultats</a></li>
+				<li><a href="#Services" class="navlink hover:text-tertiary">Services</a></li>
+				<li><a href="#A propos" class="navlink hover:text-tertiary">À propos</a></li>
+				<li><a href="#FAQ" class="navlink hover:text-tertiary">FAQ</a></li>
+				<li><a href="#Contact" class="navlink hover:text-tertiary">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -684,13 +567,13 @@
 			<!-- Instagram Icon -->
 			<a
 				href="https://www.instagram.com"
-				class="text-secondary hover:text-tertiary"
+				class="text-primary hover:text-secondary bg-white rounded-full p-2.5"
 				aria-label="Instagram"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="currentColor"
-					class="h-8 w-8"
+					class="h-6 w-6"
 					viewBox="0 0 24 24"
 				>
 					<path
@@ -705,13 +588,13 @@
 			<!-- Facebook Icon -->
 			<a
 				href="https://www.facebook.com"
-				class="text-secondary hover:text-tertiary"
+				class="text-primary hover:text-secondary bg-white rounded-full p-2.5"
 				aria-label="Facebook"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="currentColor"
-					class="h-8 w-8"
+					class="h-6 w-6"
 					viewBox="0 0 24 24"
 				>
 					<path
@@ -723,13 +606,13 @@
 			<!-- WhatsApp Icon -->
 			<a
 				href="https://www.whatsapp.com"
-				class="text-secondary hover:text-tertiary"
+				class="text-primary hover:text-secondary bg-white rounded-full p-2.5"
 				aria-label="WhatsApp"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="currentColor"
-					class="h-8 w-8"
+					class="h-6 w-6"
 					viewBox="0 0 24 24"
 				>
 					<path
@@ -754,7 +637,7 @@
 
 	<!-- Bottom Bar -->
 	<div class="bg-primary-dark py-2 mt-8 text-center text-sm">
-		<p class="text-gray-800">
+		<p class="text-gray-800 font-semibold">
 			Design, textes et dev par <a href="#hero" class="text-white hover:underline">PB</a>
 		</p>
 	</div>
