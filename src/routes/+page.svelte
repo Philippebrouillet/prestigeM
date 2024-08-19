@@ -196,7 +196,7 @@
 
 <!-- SECTION SOLUTION  -->
 
-<section id="Solution" class="bg-white py-28 px-6 lg:px-20 border-y border-primary bg-primary/10">
+<section id="Solution" class="bg-white py-28 px-6 lg:px-20 border-y border-primary bg-secondary/20">
 	<div class="max-w-7xl mx-auto text-center mb-12">
 		<!-- Heading -->
 		<h2 class="text-3xl lg:text-4xl font-semibold mb-10 playfair">
