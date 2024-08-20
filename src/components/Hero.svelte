@@ -1,14 +1,7 @@
 <script>
 	import video from '$lib/vidéos/Video5.mp4';
-	import { onMount } from 'svelte';
-	export let agencyName;
 
-	onMount(() => {
-		document.addEventListener('DOMContentLoaded', function () {
-			const video = document.getElementById('myVideo');
-			video.play();
-		});
-	});
+	export let agencyName;
 </script>
 
 <main id="hero" class="relative h-screen flex justify-center items-center overflow-hidden">
@@ -21,7 +14,7 @@
 		loop
 		playsinline
 		preload="auto"
-		class="absolute top-0 left-0 w-full h-full object-cover z-0"
+		class="absolute top-0 left-0 w-full h-full object-cover z-0 no-controls"
 	>
 	</video>
 
@@ -60,5 +53,13 @@
 		text-shadow: 2px 2px 6px #c6605d;
 		font-weight: bold;
 		border-radius: 5px;
+	}
+
+	video::-webkit-media-controls {
+		display: none !important;
+	}
+
+	video::-webkit-media-controls-enclosure {
+		display: none !important;
 	}
 </style>
