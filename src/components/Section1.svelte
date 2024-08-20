@@ -1,5 +1,5 @@
 <script>
-	export let girl1, concu, marketing, motivation;
+	export let girl, concu, marketing, motivation;
 </script>
 
 <section class="bg-white py-28 px-6 lg:px-20">
@@ -24,7 +24,7 @@
 			<!-- Left Column with Image -->
 			<div class="w-full lg:w-1/3">
 				<img
-					src={girl1}
+					src={girl}
 					alt="Illustration"
 					class="rounded-lg shadow-lg max-h-[500px] w-full sm:w-auto lg:max-h-[2000px] object-cover"
 				/>

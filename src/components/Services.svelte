@@ -122,7 +122,7 @@
 				<p>
 					Receive comprehensive assistance for managing your OnlyFans and MYM accounts. The agency
 					handles technical issues, performance analysis, legal aspects, and marketing. We ensure
-					your rights are protected, securing your content. Assistance solutions are at your
+					your rights are protected, securing your content. Assistance Solutions are at your
 					disposal to address any problem and give you peace of mind.
 				</p>
 			</div>

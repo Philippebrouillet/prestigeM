@@ -15,7 +15,7 @@
 		<!-- Navigation Links -->
 		<nav class="mb-6">
 			<ul class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-6">
-				<li><a href="#Solution" class="navlink hover:text-tertiary">Solution</a></li>
+				<li><a href="#Solutions" class="navlink hover:text-tertiary">Solutions</a></li>
 				<li><a href="#Results" class="navlink hover:text-tertiary">Results</a></li>
 				<li><a href="#Services" class="navlink hover:text-tertiary">Services</a></li>
 				<li><a href="#About" class="navlink hover:text-tertiary">About</a></li>

@@ -2,7 +2,7 @@
 	import '../app.css';
 	import logo from '$lib/images/logo.png';
 
-	import girl1 from '$lib/images/girl1.png';
+	import girl from '$lib/images/girl1.png';
 	import buis from '$lib/images/buiss3.png';
 	import concu from '$lib/images/concu.png';
 	import marketing from '$lib/images/marketing.png';
@@ -42,7 +42,7 @@
 
 <Hero {agencyName} />
 
-<Section1 {concu} {marketing} {motivation} {girl1} />
+<Section1 {concu} {marketing} {motivation} {girl} />
 
 <Solutions {agencyName} {argent} {timeplus} {perso} />
 
