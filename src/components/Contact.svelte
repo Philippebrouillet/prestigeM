@@ -3,7 +3,7 @@
 	import { toast } from 'svelte-sonner';
 
 	export let agencyName;
-	toast.success('Message sent successfully!');
+
 	emailjs.init('TcZbVBBUg-p6ppXEA');
 
 	function handleSubmit(e) {
@@ -18,7 +18,7 @@
 
 <section
 	id="Contact"
-	class="bg-gradient-to-b from-primary via-secondary to-primary py-20 my-10 px-6 lg:px-20 text-white"
+	class="bg-gradient-to-b from-primary via-secondary to-primary py-28 my-10 px-6 lg:px-20 text-white"
 >
 	<div class="max-w-4xl mx-auto">
 		<h2 class="text-3xl lg:text-4xl font-semibold playfair text-center mb-10">
