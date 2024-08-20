@@ -5,16 +5,12 @@
 	let innerWidth;
 	let openMobilMenu = false;
 
-	const toggleNavbar = () => {
+	const toggleMobilMenu = () => {
 		openMobilMenu = !openMobilMenu;
 	};
 
 	const scrollLimit = 100;
-	const links = ['Solution', 'Résultats', 'Services', logo, 'A propos', 'FAQ', 'Contact'];
-	// const scrollToElem = (elemId) => {
-	// 	const elem = document.getElementById(elemId);
-	// 	elem.scrollTo({ behavior: 'smooth' });
-	// };
+	const links = ['Solutions', 'Results', 'Services', logo, 'About', 'FAQ', 'Contact'];
 </script>
 
 <svelte:window bind:scrollY bind:innerWidth />
@@ -26,7 +22,7 @@
 			: 'bg-transparent text-white'} z-50 fixed top-0 w-full flex justify-center items-center"
 	>
 		<nav class="transition-all duration-300 {scrollY > scrollLimit ? 'py-4' : 'py-5'}">
-			<ul class:text-lg={scrollY < scrollLimit} class="flex justify-center items-center gap-5">
+			<ul class:text-lg={scrollY < scrollLimit} class="flex justify-center items-center gap-6">
 				{#each links as link, i}
 					{#if i === 3}
 						<li>
@@ -71,7 +67,7 @@
 				/>
 			</a>
 
-			<button on:click={toggleNavbar}
+			<button on:click={toggleMobilMenu}
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -90,7 +86,7 @@
 		<div
 			class="fixed z-[100] top-0 left-0 w-screen h-screen bg-tertiary flex justify-center items-center"
 		>
-			<button class="fixed top-10 right-10 z-[400] text-primary" on:click={toggleNavbar}
+			<button class="fixed top-10 right-10 z-[400] text-primary" on:click={toggleMobilMenu}
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -105,7 +101,7 @@
 			<ul
 				class="flex max-h-screen overflow-y-auto flex-col justify-start items-center gap-5 text-white text-3xl"
 			>
-				<a href="#hero ">
+				<a href="#hero">
 					<img
 						src={logo}
 						alt="logo"
@@ -117,7 +113,7 @@
 						<div class="hidden"></div>
 					{:else}
 						<li>
-							<a on:click={toggleNavbar} href="#{link}" class="navlink">{link}</a>
+							<a on:click={toggleMobilMenu} href="#{link}" class="navlink">{link}</a>
 						</li>
 					{/if}
 				{/each}
