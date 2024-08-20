@@ -1,5 +1,6 @@
 <script>
 	import logo from '$lib/images/logo.png';
+	import { scale } from 'svelte/transition';
 
 	let scrollY;
 	let innerWidth;
@@ -121,4 +122,21 @@
 			</ul>
 		</div>
 	{/if}
+{/if}
+
+{#if scrollY > scrollLimit}
+	<a
+		in:scale
+		href="#hero"
+		class="fixed bottom-6 border border-white right-6 z-50 bg-primary text-white p-2.5 rounded-full shadow-lg hover:bg-secondary transition transform hover:-translate-y-1 hover:shadow-xl"
+		aria-label="Back to Top"
+	>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-6 w-6" viewBox="0 0 20 20">
+			<path
+				fill-rule="evenodd"
+				d="M3.293 12.707a1 1 0 011.414 0L10 7.414l5.293 5.293a1 1 0 001.414-1.414l-6-6a1 1 0 00-1.414 0l-6 6a1 1 0 001.414 1.414z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	</a>
 {/if}
