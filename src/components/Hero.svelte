@@ -1,11 +1,20 @@
 <script>
 	import video from '$lib/vidéos/Video5.mp4';
+	import { onMount } from 'svelte';
 	export let agencyName;
+
+	onMount(() => {
+		document.addEventListener('DOMContentLoaded', function () {
+			const video = document.getElementById('myVideo');
+			video.play();
+		});
+	});
 </script>
 
 <main id="hero" class="relative h-screen flex justify-center items-center overflow-hidden">
 	<!-- Background Video -->
 	<video
+		id="myVideo"
 		src={video}
 		autoplay
 		muted
