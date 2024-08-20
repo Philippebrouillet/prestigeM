@@ -90,15 +90,6 @@
 
 		<!-- Copyright Text -->
 		<p class="text-sm mb-4">Copyright © 2024 • {agencyName}. All rights reserved.</p>
-
-		<!-- Legal Links -->
-		<div class="flex justify-center space-x-4 text-sm">
-			<a href="#hero" class="hover:underline">Legal Notice</a>
-			<span class="text-gray-400">|</span>
-			<a href="#hero" class="hover:underline">Privacy Policy</a>
-			<span class="text-gray-400">|</span>
-			<a href="#hero" class="hover:underline">Cookie Policy</a>
-		</div>
 	</div>
 
 	<!-- Bottom Bar -->
