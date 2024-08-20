@@ -28,9 +28,9 @@
 	}
 
 	.navlink {
-		@apply hover:text-primary transition-colors duration-150 font-semibold;
+		@apply hover:text-primary transition-colors duration-150 font-semibold active:scale-95;
 	}
 	.linkButtonPrimary {
-		@apply bg-primary text-white py-3  px-6 rounded-md font-bold flex justify-center items-center hover:bg-secondary transition-colors duration-200;
+		@apply bg-primary text-white py-3  px-6 rounded-md font-bold flex justify-center active:scale-95 items-center hover:bg-secondary transition-colors duration-200;
 	}
 }

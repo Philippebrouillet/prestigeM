@@ -1,9 +1,10 @@
 <script>
 	export let buis, agencyName;
+	import girl from '$lib/images/girl4.png';
 </script>
 
 <section id="About" class="bg-white py-28 px-6 lg:px-20">
-	<div id="FAQ" class="max-w-7xl mx-auto">
+	<div class="max-w-7xl mx-auto">
 		<!-- Top Section: Image and Description -->
 		<div class="lg:flex lg:items-center lg:space-x-12">
 			<!-- Image -->
@@ -52,9 +53,13 @@
 
 		<!-- Call to Action Section -->
 		<div
-			class="bg-secondary text-white mt-12 p-8 rounded-lg shadow-lg flex flex-col lg:flex-row lg:items-center"
+			style="background-image: url({girl})"
+			class=" bg-no-repeat bg-cover bg-center relative text-white mt-12 p-8 rounded-lg shadow-lg flex flex-col lg:flex-row lg:items-center"
 		>
-			<div class="lg:w-2/3">
+			<div
+				class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-800 via-gray-800/50 to-gray-800/80 rounded-lg"
+			></div>
+			<div class="lg:w-2/3 relative">
 				<h3 class="text-2xl font-semibold mb-4">Why choose {agencyName}?</h3>
 				<p class="text-lg mb-4">
 					If you had to remember just one reason to work with us, we believe it would be this: {agencyName}
@@ -66,9 +71,9 @@
 					Partner with {agencyName} and take your career to the next level without compromise.
 				</p>
 			</div>
-			<div class="lg:w-1/3 mt-4 lg:mt-0 lg:pl-8 text-center lg:text-left">
-				<a href="#hero" class="linkButtonPrimary hover:bg-tertiary hover:text-primary">
-					Join {agencyName} →
+			<div class="lg:w-1/3 mt-4 lg:mt-0 lg:pl-8 text-center lg:text-left relative">
+				<a href="#Contact" class="linkButtonPrimary hover:bg-tertiary hover:text-primary">
+					Join {agencyName} <span class="ml-2">→</span>
 				</a>
 			</div>
 		</div>

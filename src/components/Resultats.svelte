@@ -4,8 +4,6 @@
 
 <section id="Results" class="bg-white py-28 px-6 lg:px-20">
 	<div class="max-w-7xl mx-auto">
-		<!-- Section Header -->
-
 		<!-- Result Cards -->
 
 		<div class="mb-14">

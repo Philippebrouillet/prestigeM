@@ -6,7 +6,11 @@
 	<div class="max-w-7xl mx-auto text-center">
 		<!-- Logo -->
 		<div class="mb-6">
-			<img src={logo} alt={agencyName} class="mx-auto h-16 rounded-full" />
+			<img
+				src={logo}
+				alt={agencyName}
+				class="mx-auto h-16 rounded-full shadow-lg shadow-primary/20"
+			/>
 		</div>
 
 		<!-- Agency Name -->

@@ -30,7 +30,8 @@
 								<img
 									src={link}
 									alt="logo"
-									class="transition-all duration-200 {scrollY > scrollLimit
+									class="transition-all duration-200 shadow-lg shadow-primary/20 {scrollY >
+									scrollLimit
 										? ' h-12 border-2 border-white'
 										: ' h-16 '}    cursor-pointer rounded-full"
 								/>
@@ -61,7 +62,7 @@
 				<img
 					src={logo}
 					alt="logo"
-					class="transition-all duration-200 {scrollY > scrollLimit
+					class="transition-all duration-200 shadow-lg shadow-primary/20 {scrollY > scrollLimit
 						? ' h-12 border-2 border-white'
 						: ' h-16'}    cursor-pointer rounded-full"
 				/>
@@ -105,7 +106,7 @@
 					<img
 						src={logo}
 						alt="logo"
-						class="transition-all text-left border-2 border-white duration-200 h-28 cursor-pointer rounded-full mb-10"
+						class="transition-all text-left shadow-lg shadow-primary/20 border-2 border-white duration-200 h-28 cursor-pointer rounded-full mb-10"
 					/>
 				</a>
 				{#each links as link, i}

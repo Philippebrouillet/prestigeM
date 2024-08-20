@@ -27,10 +27,11 @@
 	import Services from '../components/Services.svelte';
 	import About from '../components/About.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Faq from '../components/FAQ.svelte';
+	import Contact from '../components/Contact.svelte';
+	import { Toaster } from 'svelte-sonner';
 	const agencyName = 'Mia Prestige';
-
-	// let videoUrl =
-	// 	'https://honeyfans-agency.com/wp-content/uploads/2023/07/video-header-HoneyFans-Agency-v3-720p.mp4';
+	const email = 'mia.agencypro@gmail.com';
 </script>
 
 <svelte:head>
@@ -39,6 +40,7 @@
 </svelte:head>
 
 <Navbar />
+<Toaster richColors />
 
 <Hero {agencyName} />
 
@@ -51,5 +53,9 @@
 <Services {agencyName} {unique} {gestion} {vente} {formation} {planification} {assistance} />
 
 <About {agencyName} {buis} />
+
+<Contact {agencyName} />
+
+<Faq {agencyName} {email} />
 
 <Footer {agencyName} {logo} />

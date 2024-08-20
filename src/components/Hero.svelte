@@ -28,11 +28,11 @@
 			</p>
 		</div>
 		<div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
-			<a href="#hero" class="linkButtonPrimary border-2 border-primary hover:border-secondary"
+			<a href="#Contact" class="linkButtonPrimary border-2 border-primary hover:border-secondary"
 				>Join {agencyName}</a
 			>
 			<a
-				href="#hero"
+				href="#About"
 				class="linkButtonPrimary bg-transparent border-2 border-gray-300 text-gray-300 hover:bg-transparent hover:border-opacity-80 hover:text-tertiary"
 			>
 				Learn more

@@ -108,10 +108,7 @@
 			</div>
 
 			<!-- Card 6 -->
-			<div
-				id="Contact"
-				class="bg-secondary text-white p-6 rounded-lg shadow-lg border-t-2 border-primary"
-			>
+			<div class="bg-secondary text-white p-6 rounded-lg shadow-lg border-t-2 border-primary">
 				<div class="mb-4">
 					<!-- Replace with an appropriate icon -->
 					<div class="bg-primary text-white p-3 rounded-full inline-block">
@@ -131,6 +128,6 @@
 
 	<!-- Call to Action -->
 	<div class="mt-12 text-center flex justify-center">
-		<a href="#hero" class="linkButtonPrimary"> Join {agencyName} </a>
+		<a href="#Contact" class="linkButtonPrimary"> Join {agencyName} </a>
 	</div>
 </section>
