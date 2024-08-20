@@ -17,7 +17,7 @@
 	import planification from '$lib/images/planification.png';
 	import assistance from '$lib/images/assistance.png';
 	import result1 from '$lib/images/result1.png';
-	import result2 from '$lib/images/result2.png';
+	import result2 from '$lib/images/result3.png';
 	import Navbar from '../components/Navbar.svelte';
 
 	import Section1 from '../components/Section1.svelte';

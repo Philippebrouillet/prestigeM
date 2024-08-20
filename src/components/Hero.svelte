@@ -18,7 +18,9 @@
 	<!-- Content on top of the video -->
 	<div class="relative text-center py-20 px-4 text-white max-w-2xl lg:max-w-4xl z-10 mt-10">
 		<h1 class="text-3xl lg:text-4xl font-semibold mb-10 playfair leading-10 tracking-wide">
-			Boost your OnlyFans and MYM earnings with the management agency {agencyName}
+			Boost your <span class="text-tertiary text-highlight">OnlyFans</span> and
+			<span class="text-tertiary text-highlight">MYM</span>
+			earnings with the management agency {agencyName}
 		</h1>
 		<div class="flex justify-center mb-10">
 			<p class="lg:text-lg w-full max-w-xl font-medium">
@@ -41,3 +43,12 @@
 	<!-- Optional overlay to darken the video -->
 	<div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-5"></div>
 </main>
+
+<style>
+	.text-highlight {
+		color: #ffe4e4ec;
+		text-shadow: 2px 2px 6px #c6605d;
+		font-weight: bold;
+		border-radius: 5px;
+	}
+</style>
