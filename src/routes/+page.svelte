@@ -1,7 +1,6 @@
 <script>
 	import '../app.css';
 	import logo from '$lib/images/logo.png';
-
 	import girl from '$lib/images/girl1.png';
 	import buis from '$lib/images/buiss3.png';
 	import concu from '$lib/images/concu.png';
@@ -19,7 +18,6 @@
 	import result1 from '$lib/images/result1.png';
 	import result2 from '$lib/images/result3.png';
 	import Navbar from '../components/Navbar.svelte';
-
 	import Section1 from '../components/Section1.svelte';
 	import Hero from '../components/Hero.svelte';
 	import Solutions from '../components/Solutions.svelte';
@@ -30,6 +28,7 @@
 	import Faq from '../components/FAQ.svelte';
 	import Contact from '../components/Contact.svelte';
 	import { Toaster } from 'svelte-sonner';
+
 	const agencyName = 'Mia Prestige';
 	const email = 'mia.agencypro@gmail.com';
 </script>
@@ -39,8 +38,9 @@
 	<meta name="description" content={agencyName} />
 </svelte:head>
 
-<Navbar />
 <Toaster richColors />
+
+<Navbar />
 
 <Hero {agencyName} />
 

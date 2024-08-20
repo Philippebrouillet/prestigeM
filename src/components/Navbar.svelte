@@ -102,7 +102,7 @@
 			<ul
 				class="flex max-h-screen overflow-y-auto flex-col justify-start items-center gap-5 text-white text-3xl"
 			>
-				<a href="#hero">
+				<a on:click={toggleMobilMenu} href="#hero">
 					<img
 						src={logo}
 						alt="logo"
